@@ -1,5 +1,5 @@
 
-  
+  //Get the Metadata infro from the JSON file 
  function Metadata(sample) {
   d3.json("samples.json").then((data) => {
     var metadata= data.metadata;
@@ -15,7 +15,7 @@
   });
 }
 
-
+// Built the charts 
 function Charts(sample) {
 
 d3.json("samples.json").then((data) => {
