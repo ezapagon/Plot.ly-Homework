@@ -52,17 +52,17 @@ function input() {
   var select = d3.select("#selDataset");
   
   d3.json("samples.json").then((data) => {
-    var sampleNames = data.names;
-    sampleNames.forEach((sample) => {
+    var IDNames = data.names;
+    IDNames.forEach((sample) => {
       select
         .append("option")
         .text(sample)
         .property("value", sample);
     });
   
-    const firstSample = sampleNames[0];
-    Charts(firstSample);
-    Metadata(firstSample);
+    const SampleInput = IDNames[0];
+    Charts(SampleInput);
+    Metadata(SampleInput);
   });
   }
 
