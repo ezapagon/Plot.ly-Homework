@@ -66,3 +66,8 @@ function input() {
   });
   }
 
+  function UserChanged(updatedSample) {
+    Charts(updatedSample);
+    Metadata(updatedSample);
+    }
+    input();
